@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/app.css" media="screen"/>
+    <script src="resources/js/app.js"></script>
+    <script src="resources/js/contact.js"></script>
+</head>
+<body>
+    <div id="page-container">
+        <div class="contact">
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html">JOSEPH YUEN</a></li>
+                </ul>
+                <ul>
+                    <li><a class="active" href="contact.html">CONTACT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>  
+            </div>
+            <h1>CONTACT</h1>
+
+            <div class="text">
+                <h2>INFORMATION</h2>
+                <h3>Email: <a href="mailto:jhyuen@wpi.edu">jhyuen@wpi.edu</a></h3>
+                <h3>Phone: <a href="tel:5125766716">(512) 576 - 6716</a></h3>
+                </br></br>
+                <h2>ONLINE PROFILES</h2>
+                <div class="icon-line">
+                    <img class="icon" src="resources/img/facebook_icon.png" alt="Facebook Icon">
+                    <h3><a href='https://www.facebook.com/profile.php?id=100004617889306'>Facebook</a></h3>
+                </div>
+                <div class="icon-line">
+                    <img class="icon" src="resources/img/linkedin_icon.png" alt="LinkedIn Icon">
+                    <h3><a href='https://www.linkedin.com/in/joseph-yuen-90210912a/'>LinkedIn</a></h3>
+                </div>
+                <div class="icon-line">
+                    <img class="icon" src="resources/img/github_icon.png" alt="GitHub Icon">
+                    <h3><a href='https://github.com/jhyuen'>GitHub</a></h3>
+                </div>
+                
+                <div class="message-form"></div>    
+                    <h2>MESSAGE ME</h2>
+                    <form name="contact-form" onsubmit="return validate();">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="" required>
+                
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="" required>
+                    
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="" style="height:20vh" required></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                <div id="submission-message">Message Submitted</div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-items">
+                <a id="footer-email" href="mailto:jhyuen@wpi.edu">jhyuen@wpi.edu</a>
+                <div class="footer-buttons">
+                    <button class="footer-icon-button" type="button" onclick="location.href='https://www.facebook.com/profile.php?id=100004617889306'">fb</button>
+                    <button class="footer-icon-button" type="button" onclick="location.href='https://www.linkedin.com/in/joseph-yuen-90210912a/'">in</button>
+                    <button class="footer-icon-button" type="button" onclick="location.href='https://github.com/jhyuen'">gh</button>
+                </div>
+                <a id="footer-number" href="tel:5125766716">(512) 576 - 6716</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

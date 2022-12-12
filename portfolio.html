@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/app.css" media="screen"/>
+    <script src="resources/js/app.js"></script>
+    <script src="resources/js/portfolio.js"></script>
+</head>
+<body>
+    <div id="page-container">
+        <div class="portfolio">
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html">JOSEPH YUEN</a></li>
+                </ul>
+                <ul>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a class="active" href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>  
+            </div>
+            <h1>PORTFOLIO</h1>
+            <div class="category-tabs">
+                <button id="art-button" class="category-tab" onclick="selectCategory(event, 'art')">ART</button>
+                <button id="research-button" class="category-tab" onclick="selectCategory(event, 'research')">RESEARCH</button>
+                <button id="code-button" class="category-tab" onclick="selectCategory(event, 'code')">CODE</button>
+            </div>
+
+            <div class="portfolio-text" id="portfolio-text">
+                <div class="art tabcontent" id="art">
+                    <div class="art-item">
+                        <div class="art-item-text-l">
+                            <h2>Figure Drawing</h2>
+                            <p class="date">February 20, 2018</p>
+                            <h3>Description</h3>
+                            <p>At WPI, I participated in AR2200, also known as figure drawing. The professor assigned us to draw a figure from a magazine. Using a string connected to a fishing weight, I measured the dimensions of the figure. Then, I drew the figure and shaded in shadows based on classical art conventions. Because of my correct shading and attention to detail, I received an A for my work.</p>
+                            <button class="download-button" type="button" onclick="window.open('resources/files/AR2202_Figure_Drawing.JPG')">Download Picture</button>
+                        </div>
+                        <img class="art-item-image" src="resources/files/AR2202_Figure_Drawing.JPG" alt="Figure Drawing Project by Joseph Yuen">
+                    </div>
+                    <div class="art-item">
+                        <img class="art-item-image" src="resources/files/Dream.png" alt="Dream by Joseph Yuen">
+                        <div class="art-item-text-r">
+                            <h2>Dream</h2>
+                            <p class="date">March 5, 2017</p>
+                            <h3>Description</h3>
+                            <p>When I questioned my reason for being at college, I made this poster to express my longing for the more. Many times, people don't look up and realize that this world is so much bigger than what we call life. I used Pixelmator, a photo manipulation software, to create vector shapes and add gradient colors. Because I worked at the WPI Academic Technology Center, I was able to print this poster, and it currently hangs on my wall.</p>
+                            <button class="download-button" type="button" onclick="window.open('resources/files/Dream.png')">Download Picture</button>
+                        </div>
+                    </div>
+                    <div class="art-item">
+                        <div class="art-item-text-l">
+                            <h2>Life</h2>
+                            <p class="date">March 10, 2017</p>
+                            <h3>Description</h3>
+                            <p>After I made Dream, I created Life with the intent of making a series of philosophical posters. Life was inspired by the Pixar movie Up. The message of the piece is to get out of your comfort zone and travel beyond what is expected and normal. To create shapes and add colors, I utilized Pixelmator, a photo manipulation software. I plan to print this poster in the near future.</p>
+                            <button class="download-button" type="button" onclick="window.open('resources/files/Life.png')">Download Picture</button>
+                        </div>
+                        <img class="art-item-image" src="resources/files/Life.png" alt="Life by Joseph Yuen">
+                    </div>
+                </div>
+
+                <div class="research tabcontent" id="research">
+                    <div class="research-item-odd">
+                        <h2>Providing Potable Water to Peruvian Informal Settlements</h2>
+                        <p class="date">December 10, 2016</p>
+                        <h3>Description</h3>
+                        <p>WPI offers a variety of freshmen classes called Great Problems Seminars (GPS) that discuss humanity's great problems such as world hunger, poverty, the global water crisis, etc.</p> 
+                        <p>My GPS class explored the effects of the global water crisis, and my team was assigned to write a research paper about water purification in Peru. The goal of the project was to provide Manchay, a slum in the Pachacamac District of Lima, Peru, with a sustainable source of fresh and potable water. We researched technology that was independent of government-based water sources, and came to the conclusion that atmospheric water generators were the best solution. Because of our extensive research and comprehensive formal presentation, we achieved the highest score in the 2016 GPS Competition.</p>
+                        <button class="download-button" type="submit" onclick="window.open('resources/files/gps_paper.pdf')">Download Paper</button>
+                    </div>
+                    <div class="research-item-even">
+                        <h2>Best Leadership Practice by the Vietnamese Student Association (VSA)</h2>
+                        <p class="date">December 14, 2017</p>
+                        <h3>Description</h3>
+                        <p>BUS1010 is a business leadership class offered at WPI designed to help students become future business leaders. The final project of the course is an analysis and recommendation summary on a WPI on-campus organization.</p>
+                        <p>My team decided to research the WPI Vietnamese Student Association (VSA). We interviewed the VSA executives and compiled their responses. In our analysis and recommendation summary, we highlighted VSA's best leadership practices and then gave VSA recommendations on how it could improve. The professor held an in-class competition to determine which team performed the best analysis. My team won first place in the competition.</p>
+                        <button class="download-button" type="button" onclick="window.open('resources/files/bus1010_paper.pdf')">Download Paper</button>
+                        <button class="download-button" type="button" onclick="window.open('resources/files/bus1010_poster.pdf')">Download Poster</button>
+                    </div>
+                </div>
+
+                <div class="code tabcontent" id="code">
+                    <div class="code-item-odd">
+                        <h2>Brigham and Women's Hospital Navigation Pathfinding Application</h2>
+                        <p class="date">March 2018 - May 2018</p>
+                        <h3>Description</h3>
+                        <p>CS3733 also known as Software Engineering is a class taught by Professor Wilson Wong at WPI. In the class, students are split up into teams of 10 and must make an application in 7 weeks.</p>
+                        <p>When people visit loved ones at the hospital, many have a hard time figuring out where to go. As a result, my team's project was to make a pathfinding application for Brigham and Women's Hospital. The idea was that the software would be loaded on kiosks all around the hospital so that people could navigate their way through the hospital with minimal human assistance. The application's main feature is pathfinding in which a user can view the directions from an inputed start location to an inputed end location. Once the software has generated directions, a user can send them to their phone or email.</p>
+                        <p>I was the team project manager, so I organized schedules and tasks for the rest of the team. Since I was also a software developer, I constructed the main map user interface.</p>
+                        <h3>Screenshots</h3>
+                        <div class="slideshow-container">
+
+                            <div class="pathfindingSlides fade">
+                                <img src="resources/img/hospital_screenshot_1.png" style="width:100%" alt="Hospital Navigation Pathfinding Application: Home Screen">
+                            </div>
+                            
+                            <div class="pathfindingSlides fade">
+                                <img src="resources/img/hospital_screenshot_2.png" style="width:100%" alt="Hospital Navigation Pathfinding Application: Map Interface with 2D Maps">
+                            </div>
+
+                            <div class="pathfindingSlides fade">
+                                <img src="resources/img/hospital_screenshot_3.png" style="width:100%" alt="Hospital Navigation Pathfinding Application: Map Interface with 3D Maps">
+                            </div>
+
+                            <div class="pathfindingSlides fade">
+                                <img src="resources/img/hospital_screenshot_4.png" style="width:100%" alt="Hospital Navigation Pathfinding Application: Tutorial overlay">
+                            </div>
+
+                            <div class="pathfindingSlides fade">
+                                <img src="resources/img/hospital_screenshot_5.png" style="width:100%" alt="Hospital Navigation Pathfinding Application: Attribution">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1, 'pathfindingSlides', 'pathfindingDot')">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 'pathfindingSlides', 'pathfindingDot')">&#10095;</a>
+                            
+                        </div>
+                        <br>
+                            
+                        <div style="text-align:center">
+                            <span class="pathfindingDot dot" onclick="currentSlide(1, 'pathfindingSlides', 'pathfindingDot')"></span> 
+                            <span class="pathfindingDot dot" onclick="currentSlide(2, 'pathfindingSlides', 'pathfindingDot')"></span> 
+                            <span class="pathfindingDot dot" onclick="currentSlide(3, 'pathfindingSlides', 'pathfindingDot')"></span> 
+                            <span class="pathfindingDot dot" onclick="currentSlide(4, 'pathfindingSlides', 'pathfindingDot')"></span> 
+                            <span class="pathfindingDot dot" onclick="currentSlide(5, 'pathfindingSlides', 'pathfindingDot')"></span> 
+                        </div>
+                    </div> 
+                    <div class="code-item-even">
+                        <h2>Mafia Rising</h2>
+                        <p class="date">March 2016 - July 2018</p>
+                        <h3>Description</h3>
+                        <p>In 2016, a couple of my friends and I formed a startup called Illum Softworks. One of our favorite childhood games was a party game called Mafia/Werewolf. As a result, in 2018, we released an iOS game based off of our favorite party game, and we called it Mafia Rising.</p>
+                        <p>Mafia Rising is an innovative and immersive app for those who love role-playing party games that powerfully enhances the game atmosphere. My team and I created a random story generator with hundreds of interchangeable lines to produce thousands of stories. I worked with the programmers to build the game's progression system, and I also worked with the artists and musicians to create original content.</p>
+                        <h3>Screenshots</h3>
+                        <div class="slideshow-container">
+
+                            <div class="mafiaSlides fade">
+                                <img src="resources/img/mr_screenshot_1.png" style="width:100%" alt="MafiaRising Screenshot: Goal Screen">
+                            </div>
+                            
+                            <div class="mafiaSlides fade">
+                                <img src="resources/img/mr_screenshot_2.png" style="width:100%" alt="MafiaRising Screenshot: Main Menu">
+                            </div>
+
+                            <div class="mafiaSlides fade">
+                                <img src="resources/img/mr_screenshot_3.png" style="width:100%; " alt="MafiaRising Screenshot: Mafia Selection Screen">
+                            </div>
+
+                            <div class="mafiaSlides fade">
+                                <img src="resources/img/mr_screenshot_4.png" style="width:100%" alt="MafiaRising Screenshot: Story Screen">
+                            </div>
+
+                            <div class="mafiaSlides fade">
+                                <img src="resources/img/mr_screenshot_5.png" style="width:100%" alt="MafiaRising Screenshot: Night Recap 1">
+                            </div>
+
+                            <div class="mafiaSlides fade">
+                                <img src="resources/img/mr_screenshot_6.png" style="width:100%" alt="MafiaRising Screenshot: Night Recap 2">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1, 'mafiaSlides', 'mafiaDot')">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 'mafiaSlides', 'mafiaDot')">&#10095;</a>
+                            
+                        </div>
+                        <br>
+                            
+                        <div style="text-align:center">
+                            <span class="mafiaDot dot" onclick="currentSlide(1, 'mafiaSlides', 'mafiaDot')"></span> 
+                            <span class="mafiaDot dot" onclick="currentSlide(2, 'mafiaSlides', 'mafiaDot')"></span> 
+                            <span class="mafiaDot dot" onclick="currentSlide(3, 'mafiaSlides', 'mafiaDot')"></span> 
+                            <span class="mafiaDot dot" onclick="currentSlide(4, 'mafiaSlides', 'mafiaDot')"></span> 
+                            <span class="mafiaDot dot" onclick="currentSlide(5, 'mafiaSlides', 'mafiaDot')"></span> 
+                            <span class="mafiaDot dot" onclick="currentSlide(6, 'mafiaSlides', 'mafiaDot')"></span> 
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-items">
+                <a id="footer-email" href="mailto:jhyuen@wpi.edu">jhyuen@wpi.edu</a>
+                <div class="footer-buttons">
+                    <button class="footer-icon-button" type="button" onclick="location.href='https://www.facebook.com/profile.php?id=100004617889306'">fb</button>
+                    <button class="footer-icon-button" type="button" onclick="location.href='https://www.linkedin.com/in/joseph-yuen-90210912a/'">in</button>
+                    <button class="footer-icon-button" type="button" onclick="location.href='https://github.com/jhyuen'">gh</button>
+                </div>
+                <a id="footer-number" href="tel:5125766716">(512) 576 - 6716</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
